@@ -1,0 +1,37 @@
+# Default values for paisa Helm chart.
+
+global:
+  environment: staging
+
+backend:
+  replicaCount: 2
+  image:
+    repository: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/paisa-backend
+    pullPolicy: IfNotPresent
+    tag: "latest"
+  service:
+    type: ClusterIP
+    port: 8080
+  resources:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
+
+aiService:
+  documentProcessing:
+    replicaCount: 1
+    image:
+      repository: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/paisa-ai-service
+      pullPolicy: IfNotPresent
+      tag: "latest"
+    port: 8001
+  intelligence:
+    replicaCount: 1
+    image:
+      repository: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/paisa-ai-service
+      pullPolicy: IfNotPresent
+      tag: "latest"
+    port: 8002

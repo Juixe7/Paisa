@@ -1,0 +1,6 @@
+apiVersion: v2
+name: paisa
+description: A Helm chart for deploying the Paisa modular monolith and AI services on Kubernetes EKS.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

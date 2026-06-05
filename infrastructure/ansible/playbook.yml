@@ -1,0 +1,21 @@
+---
+# Ansible playbook to install and configure RabbitMQ and monitoring tools on EC2 (Blueprint Section 11.2)
+
+- name: Configure RabbitMQ and Monitoring Servers
+  hosts: rabbitmq_servers:monitoring_servers
+  become: yes
+  tasks:
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install dependencies
+      apt:
+        name:
+          - curl
+          - gnupg
+          - apt-transport-https
+        state: present
+
+    # RabbitMQ setup and configuration would go here
