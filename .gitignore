@@ -19,6 +19,7 @@ db.db
 *.njsproj
 *.sln
 *.swp
+*.exe
 
 # Go Monolith
 /backend/bin/

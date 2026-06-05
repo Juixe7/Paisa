@@ -30,3 +30,6 @@ install-mobile:
 
 run-mobile:
 	cd mobile && npm run start
+
+migrate-up:
+	@golang-migrate -path backend/migrations -database "$(DATABASE_URL)" up
