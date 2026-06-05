@@ -1,4 +1,4 @@
-module github.com/avadhut/paisa/backend
+module github.com/Juixe7/Paisa/backend
 
 go 1.25
 

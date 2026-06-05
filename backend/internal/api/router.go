@@ -3,12 +3,12 @@ package api
 import (
 	"time"
 
-	"github.com/avadhut/paisa/backend/internal/auth"
-	"github.com/avadhut/paisa/backend/internal/categorisation"
-	"github.com/avadhut/paisa/backend/internal/analytics"
-	"github.com/avadhut/paisa/backend/internal/notification"
-	"github.com/avadhut/paisa/backend/internal/goals"
-	"github.com/avadhut/paisa/backend/internal/transaction"
+	"github.com/Juixe7/Paisa/backend/internal/auth"
+	"github.com/Juixe7/Paisa/backend/internal/categorisation"
+	"github.com/Juixe7/Paisa/backend/internal/analytics"
+	"github.com/Juixe7/Paisa/backend/internal/notification"
+	"github.com/Juixe7/Paisa/backend/internal/goals"
+	"github.com/Juixe7/Paisa/backend/internal/transaction"
 	
 	"github.com/gin-gonic/gin"
 	redisclient "github.com/redis/go-redis/v9"
